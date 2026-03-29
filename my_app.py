@@ -10,7 +10,7 @@ st.write("By: Ali Sher, Khushboo, Kripita, Puja, Rupam")
 # --- PART 3: डेटा और ट्रेनिंग ---
 @st.cache_resource
 def load_and_train():
-    df = pd.read_csv("C:\\Users\\DELL\\Downloads\\Clean_Dataset.csv")
+    df = pd.read_csv('Clean_Dataset.csv')
     df_clean = df.drop(columns=['Unnamed: 0', 'flight'])
     
     le = LabelEncoder()
